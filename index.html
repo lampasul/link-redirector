@@ -1,31 +1,121 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Lamp Redirector</title>
-    <script>
-      async function loadRedirects() {
-        try {
-          const response = await fetch("redirects.json");
-          const redirects = await response.json();
-
-          const params = new URLSearchParams(window.location.search);
-          const key = params.get("to")?.toLowerCase();
-          const url = redirects[key];
-
-          if (url) {
-            window.location.replace(url);
-          } else {
-            document.write(
-              `<h2>Redirect not found</h2>
-               <p>Available: ${Object.keys(redirects).join(", ")}</p>`
-            );
-          }
-        } catch (err) {
-          document.write("<h2>Error loading redirects.json</h2>");
-        }
-      }
-      loadRedirects();
-    </script>
-  </head>
-  <body></body>
-</html>
+<!DOCTYPE html><html><head><meta charset='UTF-8'><title>Redirecting...</title><script>const redirects = {
+  "docasaw": "https://ra-sl.com/dp-B07NQMN8CNLP",
+  "elemiscream": "https://best-reviewers.com/dp-B07VQB6BBSMH",
+  "grassroute": "https://grassrouteguide.com/dp-B0DM6N1CNN",
+  "trailrun": "https://grassrouteguide.com/dp-B0DGQGKMGN",
+  "aumuca": "https://grassrouteguide.com/dp-B09MVNGT4S",
+  "sunwarrior": "https://ra-sl.com/dp-B09HSP8JNS",
+  "jlablux": "https://onlinehairguide.com/dp-B0CRM4Q1W1SC",
+  "cucina": "https://videoguidelines.com/dp-B0BTN6H4K3OHJ",
+  "rated": "https://ratedpleasure.com/best-wearable-vibrators",
+  "grill": "https://nelsonfoto.com/dp-B0CV44CMRMFQ",
+  "playpen": "https://nelsonfoto.com/dp-B08KLSQWFQC",
+  "redragon": "https://nelsonfoto.com/dp-B019O9BLVY",
+  "sweep": "https://linkingiton.com",
+  "heater": "https://ra-sl.com/dp-B0DPWW94GF",
+  "garmin": "https://videoguidelines.com/garmin_watch",
+  "kingcamp": "https://videoguidelines.com/dp-B084SQC77QCJ",
+  "guasha": "https://videoguidelines.com/dp-B089MZTL6XQ",
+  "orthofeet": "https://ra-sl.com/dp-B095N9K4J9",
+  "nortiv": "https://ra-sl.com/dp-B0CMBTG7PZ",
+  "gochifix": "https://lvnta.com/lv_6RsjCCoXInLIQ23s3v",
+  "sunjoe": "https://lvnta.com/lv_aqwXuwGuXu7shtYAWE",
+  "realgood": "https://lvnta.com/lv_5NFqoCbkx28bobatjG",
+  "borbone": "https://lvnta.com/lv_l8dSLrz9nFFgXrKQI1",
+  "thisbag": "https://ra-sl.com/dp-B07PV419QCA",
+  "foaming": "https://videoguidelines.com/dp-B00F6XZNOOBH",
+  "jlab": "https://ra-sl.com/dp-B0CGGWCPWSK",
+  "razorpower": "https://ra-sl.com/dp-B0DGQQ9TW3J;",
+  "innova": "https://best-reviewers.com/dp-B07Z481NJM",
+  "nixplay": "https://ra-sl.com/dp-B09X4L9TDP",
+  "massager": "https://ra-sl.com/dp-B09PY9RZDV",
+  "bamboo": "https://ra-sl.com/dp-B0CTN2YMWQ",
+  "minecraft": "https://nelsonfoto.com/dp-B08F4FHHH6",
+  "minecraft2": "https://ra-sl.com/dp-B08F4FHHH6",
+  "zyllion": "https://globalreviewchannel.com/dp-B0BYTLT1VL",
+  "treblab": "https://best-reviewers.com/dp-B07V38STVLR",
+  "amazfit": "https://globalreviewchannel.com/dp-B0DT3YNMBX",
+  "nutrichef": "https://ra-sl.com/dp-B0CV44CMRM",
+  "shoes": "https://ra-sl.com/The_Best_Shoes",
+  "stem": "https://nelsonfoto.com/dp-B0F1MH7111",
+  "g3p600": "https://ra-sl.com/dp-B07P1XFYJP9",
+  "g3p800": "https://ra-sl.com/dp-B0987FCQQW3",
+  "ulikeone": "https://recommendedstuff.com/dp-B0CV3ZJ2PN5",
+  "toothbrush": "https://grassrouteguide.com/dp-B072YVWBXHJH",
+  "cliganic": "https://lvnta.com/lv_vCdrfleICK0hWpI0Cv",
+  "olaprima": "https://lvnta.com/lv_oD1QxMcZlvVCK0KDiD",
+  "artnatural": "https://grassrouteguide.com/dp-B0C8LYLYPKSD",
+  "mattress": "https://best-reviewers.com/dp-B07VXS3PX2RT",
+  "stains": "https://grassrouteguide.com/dp-B09HW479TCA",
+  "sunny": "https://best-reviewers.com/dp-B00WNEB4BUL",
+  "kuats": "https://grassrouteguide.com/dp-B07D94X9CKS",
+  "ouai": "https://videoguidelines.com/dp-B084BTP393D",
+  "towels": "https://www.reddit.com/r/Towels/comments/1mg4jpk/all_kinds_of_towel_deep_dive/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button",
+  "danish": "https://nelsonfoto.com/dp-B07HKCDZ34C",
+  "chefwave": "https://nelsonfoto.com/dp-B07S2T5NZVQ",
+  "swimming": "https://recommendedstuff.com/dp-B01N129AQ8A",
+  "indian": "https://recommendedstuff.com/dp-B00GDINIZCIO",
+  "keranique": "https://recommendedstuff.com/dp-B0742LTBJLY",
+  "nuskin": "https://videoguidelines.com/dp-B0DPJGMRQRS",
+  "caraway": "https://videoguidelines.com/dp-B08XLDWJYVZ",
+  "iphone": "https://videoguidelines.com/dp-B0CJWG7MHM",
+  "socks": "https://videoguidelines.com/dp-B07ZRL6TFZ",
+  "cloud": "https://videoguidelines.com/dp-B084Y8NZR6",
+  "catfood": "https://videoguidelines.com/dp-B00545PN3U",
+  "camera": "https://grassrouteguide.com/dp-B0CR5F7DBWOI",
+  "bottle": "https://videoguidelines.com/dp-B0B1LDMV23",
+  "tactical": "https://videoguidelines.com/dp-B0BMM7TZK4",
+  "waterproofs": "https://recommendedstuff.com/dp-B0D8W1NL8ZVE",
+  "mouse": "https://grassrouteguide.com/dp-B0DMDL4QSBC",
+  "christmas": "https://grassrouteguide.com/dp-B0CRR91YW4ZX",
+  "kricely": "https://grassrouteguide.com/dp-B0DR8BPZX3ZA",
+  "yearold": "https://grassrouteguide.com/dp-163217104XSD",
+  "platform": "https://videoguidelines.com/dp-B07D94X9CKZ",
+  "fingerbrush": "https://lifestylesecretreview.com/dp-B0C3M7TD8RBH",
+  "rosystem": "https://lifestylesecretreview.com/dp-B0FGPX7VGXFR",
+  "tanktops": "https://videoguidelines.com/dp-B0C1MTGTZ4Q",
+  "glycinate": "https://lifestylesecretreview.com/dp-B0D84R8XLTPR",
+  "frontpocket": "https://videoguidelines.com/dp-B099HXY1M1TY",
+  "zdzabike": "https://lifestylesecretreview.com/dp-B0DQ7GWY5BBG",
+  "controller": "https://fairbrandreviews.com/best_ps5_controllers",
+  "hoto": "https://videoguidelines.com/dp-B09YTNLDJGPO",
+  "layngo": "https://videoguidelines.com/dp-B081TH6VJ4OI",
+  "wallet": "https://nelsonfoto.com/dp-B099HXY1M1BN",
+  "eyecore": "https://videoguidelines.com/dp-B08L8V41WCF",
+  "speaker": "https://nelsonfoto.com/floor_standing__speakers",
+  "wallet2": "https://econsumerproductreviews.com/dp-B0F66FS5KTLO",
+  "blankit": "https://videoguidelines.com/dp-B07BX3FYMRKI",
+  "washer": "https://nelsonfoto.com/dp-B089YSKJY6CS",
+  "hiking": "https://nelsonfoto.com/dp-B0CP7TR13YQW",
+  "sketcher": "https://econsumerproductreviews.com/shoes___sstanding",
+  "bluetooth": "https://econsumerproductreviews.com/dp-B09MTN4J3ZES",
+  "dashy": "https://videoguidelines.com/dp-B09WXX4DGMXZ",
+  "siricone": "https://videoguidelines.com/dp-B0D8HVBVS6ZC",
+  "sensitive": "https://ra-sl.com/dp-B00F6XZNLMVA",
+  "period": "https://ra-sl.com/dp-B0BRPR8QSXXA",
+  "babytoys": "https://ra-sl.com/bes_baby__toys",
+  "midtier": "https://ra-sl.com/dp-B0DG3HB4DRDE",
+  "toesneak": "https://ra-sl.com/dp-B0D2D245R5QE",
+  "mowers": "https://onlinehairguide.com/best_mowersq",
+  "foothose": "https://onlinehairguide.com/dp-B08N5F26XNBE",
+  "nutricost": "https://onlinehairguide.com/dp-B01IW245EYVS",
+  "artificial": "https://stylesreview.com/dp-B0C1NXL32G",
+  "lenmen": "https://stylesreview.com/dp-B0DG5DRZWD",
+  "ygsntg": "https://hyperwebguide.com/dp-B0CDC59W7F",
+  "android": "https://hyperwebguide.com/dp-B0CKJ7ZYKB",
+  "folding": "https://lifestylesecretreview.com/dp-B08PZD9LQJ",
+  "petafe": "https://lifestylesecretreview.com/dp-B01J5GE3MA",
+  "combo": "https://lifestylesecretreview.com/dp-B0DBV57TJ5",
+  "btus": "https://lifestylesecretreview.com/dp-B0FCM3Q3Q4",
+  "test": "https://example.com",
+  "yt": "https://www.youtube.com/"
+};
+function getParam(name){
+  const params = new URLSearchParams(window.location.search);
+  return params.get(name);
+}
+const key = getParam("to");
+const url = redirects[key?.toLowerCase()];
+if(url){ window.location.replace(url); }
+else { document.write("<h2>Redirect not found</h2><p>Try one of: "+Object.keys(redirects).join(", ")+"</p>"); }
+    </script></head><body></body></html>
