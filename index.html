@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lamp Redirector</title>
+    <script>
+      async function loadRedirects() {
+        try {
+          const response = await fetch("redirects.json");
+          const redirects = await response.json();
+
+          const params = new URLSearchParams(window.location.search);
+          const key = params.get("to")?.toLowerCase();
+          const url = redirects[key];
+
+          if (url) {
+            window.location.replace(url);
+          } else {
+            document.write(
+              `<h2>Redirect not found</h2>
+               <p>Available: ${Object.keys(redirects).join(", ")}</p>`
+            );
+          }
+        } catch (err) {
+          document.write("<h2>Error loading redirects.json</h2>");
+        }
+      }
+      loadRedirects();
+    </script>
+  </head>
+  <body></body>
+</html>
